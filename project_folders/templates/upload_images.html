@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+<head>
+    <!-- Meta tags, title, and any other head content can be added here -->
+</head>
+<body>
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <form action="/upload_image" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h4>Upload Images (Multiple)</h4>
+        <input type="file" name="images" id="images" multiple>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Replace src with your actual script file -->
+    <!-- You can include any scripts or additional content here -->
+</body>
+</html>
